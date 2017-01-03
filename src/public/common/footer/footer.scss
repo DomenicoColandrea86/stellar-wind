@@ -1,0 +1,34 @@
+
+@import '../../common/styles/index';
+
+footer {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+    line-height: 1;
+    padding: em(15) 0;
+    text-align: center;
+    width: 100%;
+    background-color: $footer-background-color;
+
+    p {
+    	margin-bottom: 0;
+    	color: white;
+    	font-size: em(11);
+
+    	a {
+			color: $footer-text;
+			text-transform: uppercase;
+			text-align: center;
+			font-family: $primary-font;
+            @include transition(color 0.2s linear);
+            padding: 0 em(10);
+
+			&:hover {
+				color: white;
+				text-decoration: none;
+			}
+		}
+    }
+}

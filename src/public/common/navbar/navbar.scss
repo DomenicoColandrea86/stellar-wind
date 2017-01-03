@@ -1,0 +1,9 @@
+
+@import '../../common/styles/index';
+
+.navbar-brand {
+  span {
+    text-transform: uppercase;
+    font-family: $logo-font;
+  }
+}

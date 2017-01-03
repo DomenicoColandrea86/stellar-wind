@@ -1,0 +1,29 @@
+
+@import '../../common/styles/index';
+
+.search-component {
+
+	input {
+		font-size: em(16);
+		
+		@include placeholder {
+		   font-family: $primary-font;
+		   color: lighten($artist-description-color, 20%);
+		}
+	}
+
+	button {
+		color: white;
+	    background-color: $search-button-color;
+	    border-color: $search-button-color;
+	    @include transition(color 0.2s linear);
+
+	    &:hover,
+	    &:focus,
+	    &:active {
+			color: white;
+			background-color: darken($search-button-color, 5%);
+	    	border-color: darken($search-button-color, 5%);
+	    }
+	}
+}

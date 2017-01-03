@@ -1,0 +1,48 @@
+
+@import '../../../common/styles/index';
+
+#artist-grid {
+	
+	[class*='col-'] {
+	    @include transition(all 0.2s linear);
+	}
+
+	[class*='col-'] {
+
+		@include bp(large) {
+			
+			&:nth-of-type(3n+1) {
+				.artist {
+					margin-left: 0 !important;
+				}
+			}
+
+			&:nth-of-type(3n+3) {
+				.artist {
+					margin-right: 0 !important;
+				}
+			}
+		}
+
+		@include bp(small) {
+			
+			&:nth-of-type(odd) {
+				.artist {
+					margin-left: 0 !important;
+				}
+			}
+
+			&:nth-of-type(even) {
+				.artist {
+					margin-right: 0 !important;
+				}
+			}
+		}
+	}
+
+	.no-results {
+		font-size: em(16);
+	    color: $artist-title-color;
+	    font-family: $primary-font;
+	}
+}

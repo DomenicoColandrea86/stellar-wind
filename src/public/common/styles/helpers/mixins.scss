@@ -1,0 +1,26 @@
+
+// ------------------------------------------------------------
+// Mixins
+// ------------------------------------------------------------
+
+/**
+ * BREAKPOINTS
+ * Mixin for handling media query breakpoints
+*/
+
+$BREAKPOINT_LARGE_MIN_WIDTH: "769px";
+$BREAKPOINT_SMALL_MAX_WIDTH: "768px";
+
+@mixin bp($point) {
+
+    $bp-large: "(min-width: #{$BREAKPOINT_LARGE_MIN_WIDTH})";
+    $bp-small: "(max-width: #{$BREAKPOINT_SMALL_MAX_WIDTH})";
+
+    @if $point == large {
+        @media #{$bp-large} { @content; }
+    }
+    @else if $point == small {
+        @media #{$bp-small}  { @content; }
+    }
+}
+

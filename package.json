@@ -1,0 +1,50 @@
+{
+  "name": "Stellar-Wind",
+  "version": "1.0.0",
+  "description": "Stellar Wind",
+  "author": "Domenico Colandrea <domenic.colandrea@gmail.com>",
+  "license": "WTFPL",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.2.18",
+    "bluebird": "^2.9.27",
+    "body-parser": "^1.15.2",
+    "bootstrap": "^3.3.7",
+    "bourbon": "^4.2.7",
+    "chalk": "^1.1.3",
+    "express": "^4.13.0",
+    "helmet": "^3.1.0",
+    "lodash": "^4.6.1",
+    "method-override": "^2.3.7",
+    "nodemon": "^1.3.7",
+    "normalize-libsass": "^1.0.3",
+    "request-promise": "^4.1.1"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1",
+    "autoprefixer": "^6.3.6",
+    "babel-core": "^5.6.15",
+    "babel-loader": "^5.3.1",
+    "css-loader": "^0.23.1",
+    "postcss-loader": "^0.9.1",
+    "node-sass": "^3.8.0",
+    "sass-loader": "^3.2.1",
+    "style-loader": "^0.12.3",
+    "uglify-loader": "^1.2.0",
+    "precss": "^1.4.0",
+    "exports-loader": "^0.6.2",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.4",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "http-proxy": "^1.11.1",
+    "image-webpack-loader": "^1.6.1",
+    "imagemin": "^3.2.0",
+    "node-libs-browser": "^0.5.2"
+  },
+  "scripts": {
+    "start": "node index",
+    "dist": "rm -rf dist/ && NODE_ENV=production webpack -p --config config/webpack.production.config.js && node index"
+  }
+}

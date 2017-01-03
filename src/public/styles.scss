@@ -1,0 +1,19 @@
+
+@import 'common/styles/index';
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding-top: 50px;
+    overflow: hidden;
+
+    #stellarWind {
+    	overflow: auto;
+	    height: 100%;
+	    padding-bottom: em(80);
+	    width: 100%;
+    }
+}

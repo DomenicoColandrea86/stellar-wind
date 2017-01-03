@@ -1,0 +1,11 @@
+<div class="container">
+	<div id="artist-grid" class="row">
+	    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-6" ng-repeat="artist in vm.artists">
+	        <artist-item artist="artist"></artist-item>
+	    </div>
+	    <div ng-if="vm.artists.length === 0 && !vm.loading" class="col-xs-12">
+	    	<p class="no-results">Sorry, no results were found.</p>
+	    </div>
+	</div>
+</div>
+<loader ng-if="vm.loading"></loader>
